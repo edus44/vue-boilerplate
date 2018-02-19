@@ -7,7 +7,6 @@ module.exports = {
     'prettier',
     'prettier/standard',
   ],
-  plugins: ['jest'],
   parserOptions: {
     parser: 'babel-eslint',
   },

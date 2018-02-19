@@ -7,6 +7,6 @@ module.exports = options => ({
     require('poi-preset-bundle-report')(),
     require('poi-preset-eslint')({ mode: '*' }),
     require('poi-preset-yaml')(),
-    // require('poi-preset-uglifyjs')(),
+    require('poi-preset-uglifyjs')(),
   ],
 })
