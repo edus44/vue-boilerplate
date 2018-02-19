@@ -14,6 +14,7 @@
       "language": "html"
     }
   ],
+  "vetur.validation.template": false,
   "jest.autoEnable": false,
   "jest.enableCodeLens": false
 }
