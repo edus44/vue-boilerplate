@@ -1,4 +1,5 @@
 module.exports = options => ({
+  port: 4444,
   html: {
     template: './src/index.html',
   },
