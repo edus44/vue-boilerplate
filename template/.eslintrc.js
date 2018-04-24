@@ -7,6 +7,7 @@ module.exports = {
     'prettier',
     'prettier/standard',
   ],
+  plugins: ['jest'],
   parserOptions: {
     parser: 'babel-eslint',
   },
@@ -16,5 +17,6 @@ module.exports = {
     'no-console': 1,
     'vue/require-v-for-key': 0,
     'vue/valid-v-on': 0,
+    'vue/max-attributes-per-line': [2, { singleline: 2 }],
   },
 }

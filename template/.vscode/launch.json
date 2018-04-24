@@ -8,13 +8,13 @@
       "type": "chrome",
       "request": "launch",
       "name": "Launch Chrome",
-      "url": "http://localhost:4000"
+      "url": "http://localhost:4444"
     },
     {
       "type": "node",
       "request": "launch",
       "name": "Debug Jest",
-      "program": "${workspaceRoot}/source/node_modules/jest/bin/jest.js",
+      "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
       "args": ["--runInBand"],
       "runtimeArgs": ["--nolazy"]
     }
