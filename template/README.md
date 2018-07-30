@@ -1,11 +1,25 @@
-# vue-boilerplate
+# game-test
 
-Vue boilerplate, based on Poi
+## Project setup
 
 ```
-# To start developing
-yarn dev
+yarn install
+```
 
-# To build /dist folder production-ready
-yarn build
+### Compiles and hot-reloads for development
+
+```
+yarn run dev
+```
+
+### Compiles and minifies for production
+
+```
+yarn run build
+```
+
+### Lints and fixes files
+
+```
+yarn run lint
 ```
