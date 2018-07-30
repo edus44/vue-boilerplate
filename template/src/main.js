@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-new Vue({
+const vm = new Vue({
   render: h => h(App),
-}).$mount('#app')
+})
 
-if (process.env.NODE_ENV === 'development') window.vm = vm
+vm.$mount('#app')
+
 Vue.config.productionTip = false
+if (process.env.NODE_ENV === 'development') window.vm = vm
