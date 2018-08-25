@@ -6,9 +6,11 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
+  plugins: ['jest'],
   extends: [
     'eslint:recommended',
     'standard',
+    'plugin:jest/recommended',
     'plugin:vue/recommended',
     'prettier',
     'prettier/standard',

@@ -4,10 +4,10 @@ Vue boilerplate, based on Poi
 
 ```
 # Install vue-cli and yarn if you haven't already
-npm install -g vue-cli yarn
+npm install -g @vue/cli yarn
 
 # Create a new project based on this template
-vue init edus44/vue-boilerplate my-project
+vue init edus44/vue-boilerplate#vue-cli my-project
 
 cd my-project
 yarn install
