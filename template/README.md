@@ -1,4 +1,4 @@
-# game-test
+# vue-boilerplate
 
 ## Project setup
 
