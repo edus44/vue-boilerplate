@@ -11,7 +11,10 @@
     "test:e2e": "vue-cli-service test:e2e",
     "test:e2e:open": "cypress open",
     "test:e2e:run": "cypress run",
-    "pretty": "prettier --write **/*.{js,json,scss,vue,yml}"
+    "pretty": "prettier --write **/*.{js,json,scss,vue,yml}",
+    "storybook": "yarn storybook:cli serve --open --copy",
+    "storybook:build": "yarn storybook:cli build",
+    "storybook:cli": "VUE_CLI_SERVICE_CONFIG_PATH=$(pwd)/tests/storybook/config/vue.config.js vue-cli-service"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -19,6 +22,12 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.10",
+    "@storybook/addon-console": "^1.0.4",
+    "@storybook/addon-knobs": "^3.4.10",
+    "@storybook/addon-storysource": "^3.4.10",
+    "@storybook/addon-viewport": "^3.4.10",
+    "@storybook/vue": "^3.4.10",
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-e2e-cypress": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
@@ -26,14 +35,15 @@
     "@vue/cli-service": "^3.0.1",
     "@vue/eslint-config-prettier": "^3.0.1",
     "@vue/eslint-config-standard": "^3.0.1",
-    "@vue/test-utils": "^1.0.0-beta.20",
+    "@vue/test-utils": "^1.0.0-beta.24",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^23.0.1",
+    "babel-jest": "^23.4.2",
     "eslint-plugin-jest": "^21.22.0",
     "lint-staged": "^7.2.2",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.3",
     "prettier": "^1.14.2",
-    "sass-loader": "^7.0.1",
+    "sass-loader": "^7.1.0",
+    "storybook-addon-vue-info": "^0.6.1",
     "vue-cli-plugin-yaml": "^1.0.1",
     "vue-template-compiler": "^2.5.17",
     "yaml-jest": "^1.0.5"
