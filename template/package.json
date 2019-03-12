@@ -1,73 +1,32 @@
 {
-  "name": "vue-boilerplate",
-  "version": "0.0.1",
-  "description": "Vue boilerplate",
-  "main": "index.js",
+  "name": "skeleton-test",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "poi -o",
-    "build": "poi build",
-    "build-report": "poi build --bundle-report",
-    "lint": "eslint --ext .js,.vue src test",
-    "test": "jest",
-    "test-dev": "jest --watch --verbose",
-    "test-coverage": "jest --coverage",
-    "test-dev-cov": "run-p serve-coverage 'test-dev -- --coverage'",
-    "serve-dist": "serve dist -s -o",
-    "serve-coverage": "live-server coverage -q",
-    "pretty": "prettier --write **/*.{js,json,scss,vue}",
-    "precommit": "lint-staged",
-    "commitmsg": "validate-commit-msg -p eslint"
-  },
-  "lint-staged": {
-    "*.{js,vue}": [
-      "prettier --write",
-      "eslint --fix --max-warnings 0",
-      "git add"
-    ],
-    "*.{scss,json}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-jest": "^21.15.1",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "eslint-plugin-vue": "^4.5.0",
-    "husky": "^0.14.3",
-    "jest": "^22.4.3",
-    "jest-serializer-vue": "^1.0.0",
-    "jest-vue-preprocessor": "^1.4.0",
-    "lint-staged": "^7.0.4",
-    "live-server": "^1.2.0",
-    "node-sass": "^4.8.3",
-    "npm-run-all": "^4.1.2",
-    "poi": "9.6.13",
-    "poi-preset-bundle-report": "^2.0.2",
-    "poi-preset-eslint": "^9.1.1",
-    "poi-preset-uglifyjs": "^1.0.1",
-    "poi-preset-yaml": "^1.0.1",
-    "prettier": "^1.12.1",
-    "sass-loader": "^7.0.1",
-    "serve": "^6.5.6",
-    "validate-commit": "^3.4.0",
-    "vue-template-compiler": "^2.5.16",
-    "vue-test-utils": "^1.0.0-beta.11",
-    "yaml-jest": "^1.0.5"
+    "dev": "vue-cli-service serve --open --copy",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "pretty": "prettier --write **/*.{js,json,scss,vue,yml,md}"
   },
   "dependencies": {
-    "vue": "^2.5.16",
-    "vue-router": "^3.0.1",
-    "vuetify": "^1.0.17",
-    "vuex": "^3.0.1",
-    "vuex-router-sync": "^5.0.0"
+    "vue": "^2.6.8"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.1",
+    "@vue/cli-plugin-eslint": "^3.5.1",
+    "@vue/cli-service": "^3.5.1",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-plugin-vue": "^5.2.2",
+    "fibers": "^3.1.1",
+    "lint-staged": "^8.1.5",
+    "sass": "^1.17.2",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.8"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }
